@@ -8,6 +8,8 @@
 
 #R 代表read，W代表write   读取所有的数据
 #在桌面保存的Excel文件要复制到python里面来
+import sys, io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="gb18030")
 from openpyxl import load_workbook  #打开工作簿
 
 def read_data(file_name,sheet_name):
