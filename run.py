@@ -8,6 +8,8 @@
 from R_W_excel import read_data  #从wxl_atuo文件夹里的R_W_excel里导入read_data函数
 from http_request import http_request
 from R_W_excel import write_data
+import sys, io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="gb18030")
 
 Token = None #全局变量  初始值设置为None
 def run(file_name,sheet_name,c1,c2): #修改全局变量 行根据id走的  c1,c2写入结果和判断结果
