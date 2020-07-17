@@ -4,8 +4,6 @@
 # @Email  :1006290526@qq.com
 # @File   :http_request.py
 
-import sys, io
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="gb18030")
 #发送http请求
 import requests
 #注册 、登录、充值、提现为一个函数
